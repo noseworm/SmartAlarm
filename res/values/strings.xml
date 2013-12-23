@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Alarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_preferences">Preferences</string>
+    <string name="title_activity_gps__test">GPS_Test</string>
+
+    <string name="transportation1">Walk</string>
+    <string name="transportation2">Bike</string>
+    <string name="transportation3">Drive</string>
+	<string name="transportation_prompt">Choose mode of transportation</string>
+	<string-array name="transportation_array">
+		<item>Walk</item>
+	    <item>Bike</item>
+	    <item>Drive</item>  
+	</string-array>
+</resources>

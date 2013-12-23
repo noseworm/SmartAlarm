@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SetAlarm" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:name="@+id/logowrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+    </RelativeLayout>
+
+ 
+
+    <RelativeLayout
+        android:id="@+id/SaveCancelButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnAddAlarm"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="btnAddAlarm_Click"
+            android:text="Add Alarm" />
+
+        <Button
+            android:id="@+id/btnPreferences"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="btnPreferences_Click"
+            android:text="Preferences" />
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/TimePickerWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/SaveCancelButtons"
+        android:translationY="-20dp" >
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+       <RelativeLayout
+        android:name="@+id/locationwrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_above="@id/TimePickerWrapper"
+        android:translationY="-40dp" >
+
+        <EditText
+            android:id="@+id/txtLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="Location" />
+
+        <TextView
+            android:id="@+id/txtArrivalTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Arrival Time: "
+            android:translationX="10dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="logo"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
